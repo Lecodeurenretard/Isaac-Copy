@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dd17kdcwous4q"
+path="res://.godot/imported/the depths intro.ogg-63987b60760c2fbd8bb6d62f8c7ffae6.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/the depths intro.ogg"
+dest_files=["res://.godot/imported/the depths intro.ogg-63987b60760c2fbd8bb6d62f8c7ffae6.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

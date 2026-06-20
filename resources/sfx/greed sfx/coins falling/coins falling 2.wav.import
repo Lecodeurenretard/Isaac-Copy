@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bifrl2k60m1px"
+path="res://.godot/imported/coins falling 2.wav-234f6ee83bb94fd01ac3e17a10478d05.sample"
+
+[deps]
+
+source_file="res://resources/sfx/greed sfx/coins falling/coins falling 2.wav"
+dest_files=["res://.godot/imported/coins falling 2.wav-234f6ee83bb94fd01ac3e17a10478d05.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

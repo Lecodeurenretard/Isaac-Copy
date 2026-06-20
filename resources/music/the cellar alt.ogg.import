@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c2gb4s36y6l4m"
+path="res://.godot/imported/the cellar alt.ogg-ed49923fa688c5a0cdb14212b0cec347.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/the cellar alt.ogg"
+dest_files=["res://.godot/imported/the cellar alt.ogg-ed49923fa688c5a0cdb14212b0cec347.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

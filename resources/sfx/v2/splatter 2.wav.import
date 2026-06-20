@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ducknvih21bqe"
+path="res://.godot/imported/splatter 2.wav-098286f5810727db90c8f510309c02fb.sample"
+
+[deps]
+
+source_file="res://resources/sfx/v2/splatter 2.wav"
+dest_files=["res://.godot/imported/splatter 2.wav-098286f5810727db90c8f510309c02fb.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

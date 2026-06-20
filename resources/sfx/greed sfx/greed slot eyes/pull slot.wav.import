@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c0o5slhcdsj01"
+path="res://.godot/imported/pull slot.wav-c1d59a7818eb11f28105ba3dcfb0364e.sample"
+
+[deps]
+
+source_file="res://resources/sfx/greed sfx/greed slot eyes/pull slot.wav"
+dest_files=["res://.godot/imported/pull slot.wav-c1d59a7818eb11f28105ba3dcfb0364e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cqs5rq3ssrk2a"
+path="res://.godot/imported/dagaz 3.wav-b9e10d1e1fe22c2f8fe4b8d8b61e8c4c.sample"
+
+[deps]
+
+source_file="res://resources/sfx/voiceover/dagaz 3.wav"
+dest_files=["res://.godot/imported/dagaz 3.wav-b9e10d1e1fe22c2f8fe4b8d8b61e8c4c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

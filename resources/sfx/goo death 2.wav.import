@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bupiuh2bail4b"
+path="res://.godot/imported/goo death 2.wav-aba75542ab9b3d98a4c72c2c9adc7ea1.sample"
+
+[deps]
+
+source_file="res://resources/sfx/goo death 2.wav"
+dest_files=["res://.godot/imported/goo death 2.wav-aba75542ab9b3d98a4c72c2c9adc7ea1.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

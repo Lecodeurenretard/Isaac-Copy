@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c1i6nknm5mlmq"
+path="res://.godot/imported/deal with the devil.ogg-aa262ddcd21d8fbb1c77a8696a236e18.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/deal with the devil.ogg"
+dest_files=["res://.godot/imported/deal with the devil.ogg-aa262ddcd21d8fbb1c77a8696a236e18.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

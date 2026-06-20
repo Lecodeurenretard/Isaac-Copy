@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bpytjvswvntxa"
+path="res://.godot/imported/nativitate (dead womb floor) layer.ogg-0671b6c2102b5ac3b318da339b2a01a9.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/afterbirth/nativitate (dead womb floor) layer.ogg"
+dest_files=["res://.godot/imported/nativitate (dead womb floor) layer.ogg-0671b6c2102b5ac3b318da339b2a01a9.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

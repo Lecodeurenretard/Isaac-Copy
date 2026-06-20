@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://gbtdg5wme64e"
+path="res://.godot/imported/health down 2.wav-0dd80343130c83843b63d491fa51482e.sample"
+
+[deps]
+
+source_file="res://resources/sfx/voiceover/health down 2.wav"
+dest_files=["res://.godot/imported/health down 2.wav-0dd80343130c83843b63d491fa51482e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

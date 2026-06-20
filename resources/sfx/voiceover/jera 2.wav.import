@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://45l61nowx12k"
+path="res://.godot/imported/jera 2.wav-e1d88f8f7a6b8168cb25657e8a5af96c.sample"
+
+[deps]
+
+source_file="res://resources/sfx/voiceover/jera 2.wav"
+dest_files=["res://.godot/imported/jera 2.wav-e1d88f8f7a6b8168cb25657e8a5af96c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

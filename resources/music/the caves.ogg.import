@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bjuplj8xcn7ei"
+path="res://.godot/imported/the caves.ogg-ca72a81a78b82bc28fe8f12234f1c905.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/the caves.ogg"
+dest_files=["res://.godot/imported/the caves.ogg-ca72a81a78b82bc28fe8f12234f1c905.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

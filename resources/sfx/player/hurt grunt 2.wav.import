@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bwkjour8u5n12"
+path="res://.godot/imported/hurt grunt 2.wav-62e2f8951c7df8c46f8024d36857a346.sample"
+
+[deps]
+
+source_file="res://resources/sfx/player/hurt grunt 2.wav"
+dest_files=["res://.godot/imported/hurt grunt 2.wav-62e2f8951c7df8c46f8024d36857a346.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

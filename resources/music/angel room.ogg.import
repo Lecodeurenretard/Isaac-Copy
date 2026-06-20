@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c15nktxshvtu7"
+path="res://.godot/imported/angel room.ogg-2f921366d9c9ab0e15a79954920518ee.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/angel room.ogg"
+dest_files=["res://.godot/imported/angel room.ogg-2f921366d9c9ab0e15a79954920518ee.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

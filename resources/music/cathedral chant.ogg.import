@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ceqlco7edqdb5"
+path="res://.godot/imported/cathedral chant.ogg-9bdaf9873a5b09a2404521c6ced59a20.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/cathedral chant.ogg"
+dest_files=["res://.godot/imported/cathedral chant.ogg-9bdaf9873a5b09a2404521c6ced59a20.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

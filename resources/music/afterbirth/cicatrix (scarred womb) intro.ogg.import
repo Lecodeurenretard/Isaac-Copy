@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cui66xu0y6sdc"
+path="res://.godot/imported/cicatrix (scarred womb) intro.ogg-3d3f2cce1d022d193f73bc0f99cc8e5e.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/afterbirth/cicatrix (scarred womb) intro.ogg"
+dest_files=["res://.godot/imported/cicatrix (scarred womb) intro.ogg-3d3f2cce1d022d193f73bc0f99cc8e5e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

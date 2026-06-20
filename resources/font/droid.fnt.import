@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://dv4bve67vlogb"
+path="res://.godot/imported/droid.fnt-9ec37d6c7ed51b93dd0f988b20218e05.fontdata"
+
+[deps]
+
+source_file="res://resources/font/droid.fnt"
+dest_files=["res://.godot/imported/droid.fnt-9ec37d6c7ed51b93dd0f988b20218e05.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c0vibtkywfdai"
+path="res://.godot/imported/chorus mortis (punk credit) intro.ogg-d4b2acebe3f564ff1f0772d65e8be351.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/afterbirth/chorus mortis (punk credit) intro.ogg"
+dest_files=["res://.godot/imported/chorus mortis (punk credit) intro.ogg-d4b2acebe3f564ff1f0772d65e8be351.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

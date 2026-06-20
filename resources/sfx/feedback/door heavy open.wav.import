@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b5qpbbw5xsrdi"
+path="res://.godot/imported/door heavy open.wav-cad8182112bbd54783399b4d07fb857c.sample"
+
+[deps]
+
+source_file="res://resources/sfx/feedback/door heavy open.wav"
+dest_files=["res://.godot/imported/door heavy open.wav-cad8182112bbd54783399b4d07fb857c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

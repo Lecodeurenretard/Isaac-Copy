@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://7g8aqbmwna8n"
+path="res://.godot/imported/angry gurgle 2.wav-b76cee646af4904b4b960570f318b4bd.sample"
+
+[deps]
+
+source_file="res://resources/sfx/angry gurgle 2.wav"
+dest_files=["res://.godot/imported/angry gurgle 2.wav-b76cee646af4904b4b960570f318b4bd.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

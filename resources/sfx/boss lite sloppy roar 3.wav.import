@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dbsf3kd2xhkmf"
+path="res://.godot/imported/boss lite sloppy roar 3.wav-7158531b1e65fe3a5bdec67921e5d928.sample"
+
+[deps]
+
+source_file="res://resources/sfx/boss lite sloppy roar 3.wav"
+dest_files=["res://.godot/imported/boss lite sloppy roar 3.wav-7158531b1e65fe3a5bdec67921e5d928.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cgug3wpuio1ji"
+path="res://.godot/imported/coin destroy.wav-06d80c1a68080403e21d2852a36f5d2e.sample"
+
+[deps]
+
+source_file="res://resources/sfx/greed sfx/coin destruction/coin destroy.wav"
+dest_files=["res://.godot/imported/coin destroy.wav-06d80c1a68080403e21d2852a36f5d2e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

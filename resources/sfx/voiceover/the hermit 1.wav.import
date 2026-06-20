@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dima4bdqjq8s1"
+path="res://.godot/imported/the hermit 1.wav-9948a5d82510c9269c5282bd65119b89.sample"
+
+[deps]
+
+source_file="res://resources/sfx/voiceover/the hermit 1.wav"
+dest_files=["res://.godot/imported/the hermit 1.wav-9948a5d82510c9269c5282bd65119b89.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

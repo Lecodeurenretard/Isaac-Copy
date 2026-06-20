@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cthvx8ne3okf8"
+path="res://.godot/imported/title screen.ogg-6c1c7110a2b0bac96dd3b55162332a2d.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/title screen.ogg"
+dest_files=["res://.godot/imported/title screen.ogg-6c1c7110a2b0bac96dd3b55162332a2d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

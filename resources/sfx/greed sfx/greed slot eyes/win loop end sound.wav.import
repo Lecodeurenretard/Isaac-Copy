@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://n3yrqdgrhav1"
+path="res://.godot/imported/win loop end sound.wav-faa60c8d9585895007551e33763f536d.sample"
+
+[deps]
+
+source_file="res://resources/sfx/greed sfx/greed slot eyes/win loop end sound.wav"
+dest_files=["res://.godot/imported/win loop end sound.wav-faa60c8d9585895007551e33763f536d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

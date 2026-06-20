@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bck8nqoj4rswh"
+path="res://.godot/imported/boss 2 intro errorbuzz.wav-15c02fb291bca3b8170d19f84aec5927.sample"
+
+[deps]
+
+source_file="res://resources/sfx/feedback/boss 2 intro errorbuzz.wav"
+dest_files=["res://.godot/imported/boss 2 intro errorbuzz.wav-15c02fb291bca3b8170d19f84aec5927.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

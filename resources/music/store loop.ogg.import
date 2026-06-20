@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://nxl1iv3cx1hw"
+path="res://.godot/imported/store loop.ogg-9e843f24e781bd889b86bbd0dc87c3f3.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/store loop.ogg"
+dest_files=["res://.godot/imported/store loop.ogg-9e843f24e781bd889b86bbd0dc87c3f3.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

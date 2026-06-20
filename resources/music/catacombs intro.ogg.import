@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b83oyyx34g5db"
+path="res://.godot/imported/catacombs intro.ogg-0bed07cd463e264e41d5fb8e07bc3b9e.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/catacombs intro.ogg"
+dest_files=["res://.godot/imported/catacombs intro.ogg-0bed07cd463e264e41d5fb8e07bc3b9e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

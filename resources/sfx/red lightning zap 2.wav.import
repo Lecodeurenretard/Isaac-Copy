@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bpl1iqqceiw1i"
+path="res://.godot/imported/red lightning zap 2.wav-21c35ec180f8a1d3e050f642b3f12fba.sample"
+
+[deps]
+
+source_file="res://resources/sfx/red lightning zap 2.wav"
+dest_files=["res://.godot/imported/red lightning zap 2.wav-21c35ec180f8a1d3e050f642b3f12fba.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

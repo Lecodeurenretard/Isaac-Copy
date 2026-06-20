@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://7jwr73y52mbl"
+path="res://.godot/imported/burning basement intro silent.ogg-afb228fe48d4fe05b4994185ac28bb67.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/afterbirth/burning basement intro silent.ogg"
+dest_files=["res://.godot/imported/burning basement intro silent.ogg-afb228fe48d4fe05b4994185ac28bb67.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

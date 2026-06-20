@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://doebpjcaba7du"
+path="res://.godot/imported/regenesis v3 intro.ogg-75ae28836edf2c6cd545a6b85a6988c8.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/afterbirth/regenesis v3 intro.ogg"
+dest_files=["res://.godot/imported/regenesis v3 intro.ogg-75ae28836edf2c6cd545a6b85a6988c8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://clowrj3scht31"
+path="res://.godot/imported/book page turn.wav-b785abcd3345a51b49c925144416b45a.sample"
+
+[deps]
+
+source_file="res://resources/sfx/feedback/book page turn.wav"
+dest_files=["res://.godot/imported/book page turn.wav-b785abcd3345a51b49c925144416b45a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

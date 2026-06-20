@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d0j52utotfxaw"
+path="res://.godot/imported/retro beats 8-6-14.ogg-21d09e08bac045e23a473f99010ab0fe.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/retro beats 8-6-14.ogg"
+dest_files=["res://.godot/imported/retro beats 8-6-14.ogg-21d09e08bac045e23a473f99010ab0fe.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

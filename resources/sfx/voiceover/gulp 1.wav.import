@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d3npnmgsae5do"
+path="res://.godot/imported/gulp 1.wav-54cb4f6186fa6ed16327bce2c94bee42.sample"
+
+[deps]
+
+source_file="res://resources/sfx/voiceover/gulp 1.wav"
+dest_files=["res://.godot/imported/gulp 1.wav-54cb4f6186fa6ed16327bce2c94bee42.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

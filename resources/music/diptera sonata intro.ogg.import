@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://h4t832oh8c7e"
+path="res://.godot/imported/diptera sonata intro.ogg-c4117fddcbc5fedc01fa2dc15d25c29f.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/diptera sonata intro.ogg"
+dest_files=["res://.godot/imported/diptera sonata intro.ogg-c4117fddcbc5fedc01fa2dc15d25c29f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

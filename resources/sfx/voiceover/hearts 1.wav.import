@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://betjlhce5holm"
+path="res://.godot/imported/hearts 1.wav-ba43aaf57953425433499e21fa18355e.sample"
+
+[deps]
+
+source_file="res://resources/sfx/voiceover/hearts 1.wav"
+dest_files=["res://.godot/imported/hearts 1.wav-ba43aaf57953425433499e21fa18355e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

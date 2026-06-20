@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b01sbop0a6jy7"
+path="res://.godot/imported/burning basement guitar layer_04.ogg-5c9f33b42788a89d4a1a63566342c17e.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/afterbirth/burning basement guitar layer_04.ogg"
+dest_files=["res://.godot/imported/burning basement guitar layer_04.ogg-5c9f33b42788a89d4a1a63566342c17e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

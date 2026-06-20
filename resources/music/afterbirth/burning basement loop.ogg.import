@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://coet3l1r4y488"
+path="res://.godot/imported/burning basement loop.ogg-ab4347873c2f2ee94b0f4836be31a099.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/afterbirth/burning basement loop.ogg"
+dest_files=["res://.godot/imported/burning basement loop.ogg-ab4347873c2f2ee94b0f4836be31a099.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

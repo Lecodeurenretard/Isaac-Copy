@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://br4fg6jhfpdmw"
+path="res://.godot/imported/kave diluvii (flooded caves) loop.ogg-f1e256b2b0cd2e70b40a6203422bba15.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/afterbirth/kave diluvii (flooded caves) loop.ogg"
+dest_files=["res://.godot/imported/kave diluvii (flooded caves) loop.ogg-f1e256b2b0cd2e70b40a6203422bba15.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

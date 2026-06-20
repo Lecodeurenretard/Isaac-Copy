@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b4ih64bjysh6d"
+path="res://.godot/imported/spider spit roar 1.wav-c7304ed23f2cf79c4fb64d693f1f2253.sample"
+
+[deps]
+
+source_file="res://resources/sfx/spider spit roar 1.wav"
+dest_files=["res://.godot/imported/spider spit roar 1.wav-c7304ed23f2cf79c4fb64d693f1f2253.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

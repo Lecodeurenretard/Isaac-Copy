@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b633tlxow35w3"
+path="res://.godot/imported/spin loop.wav-828c81784f72ea01fbb077e5fd0ac3a7.sample"
+
+[deps]
+
+source_file="res://resources/sfx/greed sfx/greed slot eyes/spin loop.wav"
+dest_files=["res://.godot/imported/spin loop.wav-828c81784f72ea01fbb077e5fd0ac3a7.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

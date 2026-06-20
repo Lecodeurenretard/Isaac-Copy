@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://mhd372uwvytg"
+path="res://.godot/imported/coin slot.wav-6f3869aed726452e8525b9de30f90627.sample"
+
+[deps]
+
+source_file="res://resources/sfx/feedback/coin slot.wav"
+dest_files=["res://.godot/imported/coin slot.wav-6f3869aed726452e8525b9de30f90627.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://coieft82ui4bf"
+path="res://.godot/imported/gold heart drop.wav-0e0f26fed200a5d3029c2fda2a796f34.sample"
+
+[deps]
+
+source_file="res://resources/sfx/gold heart drop.wav"
+dest_files=["res://.godot/imported/gold heart drop.wav-0e0f26fed200a5d3029c2fda2a796f34.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

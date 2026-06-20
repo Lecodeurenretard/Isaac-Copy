@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dj6h0f48g13mo"
+path="res://.godot/imported/blood laser weak 2.wav-609f5e9b126d2a06f073c8dfd5a9c4b3.sample"
+
+[deps]
+
+source_file="res://resources/sfx/v2/blood laser weak 2.wav"
+dest_files=["res://.godot/imported/blood laser weak 2.wav-609f5e9b126d2a06f073c8dfd5a9c4b3.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

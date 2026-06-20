@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dtnwcj7dnl7ib"
+path="res://.godot/imported/fetus feet.wav-4795ca37018a8e2d10d1e00484d93496.sample"
+
+[deps]
+
+source_file="res://resources/sfx/fetus feet.wav"
+dest_files=["res://.godot/imported/fetus feet.wav-4795ca37018a8e2d10d1e00484d93496.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

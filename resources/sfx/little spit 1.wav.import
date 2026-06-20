@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://0hwwme75ymku"
+path="res://.godot/imported/little spit 1.wav-62013039af68c8f76f686ac049ed025b.sample"
+
+[deps]
+
+source_file="res://resources/sfx/little spit 1.wav"
+dest_files=["res://.godot/imported/little spit 1.wav-62013039af68c8f76f686ac049ed025b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

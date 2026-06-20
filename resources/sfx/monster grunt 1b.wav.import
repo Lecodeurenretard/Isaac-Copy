@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cq0s0rhwug2cu"
+path="res://.godot/imported/monster grunt 1b.wav-3b5557343c4a8cd1ef8842b3ac26c204.sample"
+
+[deps]
+
+source_file="res://resources/sfx/monster grunt 1b.wav"
+dest_files=["res://.godot/imported/monster grunt 1b.wav-3b5557343c4a8cd1ef8842b3ac26c204.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

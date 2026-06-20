@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://25fjg4yjni2j"
+path="res://.godot/imported/nativitate  (dead womb floor) intro silence.ogg-500c8547c0eab185636e443a380e0b72.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/afterbirth/nativitate  (dead womb floor) intro silence.ogg"
+dest_files=["res://.godot/imported/nativitate  (dead womb floor) intro silence.ogg-500c8547c0eab185636e443a380e0b72.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

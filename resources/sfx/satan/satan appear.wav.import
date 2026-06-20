@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bl8sfxngf4c0q"
+path="res://.godot/imported/satan appear.wav-92d1a86e01edf9897f256b63b5553083.sample"
+
+[deps]
+
+source_file="res://resources/sfx/satan/satan appear.wav"
+dest_files=["res://.godot/imported/satan appear.wav-92d1a86e01edf9897f256b63b5553083.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

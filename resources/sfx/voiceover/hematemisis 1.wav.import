@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cv0qyq1xk5xtr"
+path="res://.godot/imported/hematemisis 1.wav-ad840ca7ea773afd7139b8ff865e0c68.sample"
+
+[deps]
+
+source_file="res://resources/sfx/voiceover/hematemisis 1.wav"
+dest_files=["res://.godot/imported/hematemisis 1.wav-ad840ca7ea773afd7139b8ff865e0c68.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://4ddx2atqnppp"
+path="res://.godot/imported/speed up 2.wav-7c73460086b273617807d2ad99a47a69.sample"
+
+[deps]
+
+source_file="res://resources/sfx/voiceover/speed up 2.wav"
+dest_files=["res://.godot/imported/speed up 2.wav-7c73460086b273617807d2ad99a47a69.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

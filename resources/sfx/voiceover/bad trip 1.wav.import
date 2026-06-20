@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://djolaipst7sk8"
+path="res://.godot/imported/bad trip 1.wav-e319cd9aa45485c171d442b7b6a7b5f4.sample"
+
+[deps]
+
+source_file="res://resources/sfx/voiceover/bad trip 1.wav"
+dest_files=["res://.godot/imported/bad trip 1.wav-e319cd9aa45485c171d442b7b6a7b5f4.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

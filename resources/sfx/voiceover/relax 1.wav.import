@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://brte8jtlvbin"
+path="res://.godot/imported/relax 1.wav-21de7791c5eb89edf54ba0bdec2ba891.sample"
+
+[deps]
+
+source_file="res://resources/sfx/voiceover/relax 1.wav"
+dest_files=["res://.godot/imported/relax 1.wav-21de7791c5eb89edf54ba0bdec2ba891.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

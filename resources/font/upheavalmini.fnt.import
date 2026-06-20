@@ -1,0 +1,16 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://blu0rt8esdpbc"
+valid=false
+
+[deps]
+
+source_file="res://resources/font/upheavalmini.fnt"
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

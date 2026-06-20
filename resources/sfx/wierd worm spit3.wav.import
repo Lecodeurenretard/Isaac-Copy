@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bttcg435jbmdi"
+path="res://.godot/imported/wierd worm spit3.wav-643944023fcea9d6281d0b15853c28b8.sample"
+
+[deps]
+
+source_file="res://resources/sfx/wierd worm spit3.wav"
+dest_files=["res://.godot/imported/wierd worm spit3.wav-643944023fcea9d6281d0b15853c28b8.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

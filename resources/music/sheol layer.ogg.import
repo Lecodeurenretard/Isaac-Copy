@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bkqtbt8m1yxh2"
+path="res://.godot/imported/sheol layer.ogg-84a38b7fd6d11a95fd38400a4f2fa906.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/sheol layer.ogg"
+dest_files=["res://.godot/imported/sheol layer.ogg-84a38b7fd6d11a95fd38400a4f2fa906.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bbamrok8ru708"
+path="res://.godot/imported/mushroom poof.wav-5c33172a76d03ddeeebcc7bdc8831082.sample"
+
+[deps]
+
+source_file="res://resources/sfx/mushroom poof.wav"
+dest_files=["res://.godot/imported/mushroom poof.wav-5c33172a76d03ddeeebcc7bdc8831082.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

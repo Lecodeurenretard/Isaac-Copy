@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c8d4maupvu6cs"
+path="res://.godot/imported/holy card 2.wav-24670cd7de5df1ae068257fc1e6d4d62.sample"
+
+[deps]
+
+source_file="res://resources/sfx/voiceover/holy card 2.wav"
+dest_files=["res://.godot/imported/holy card 2.wav-24670cd7de5df1ae068257fc1e6d4d62.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://d3psdg4b2778x"
+path="res://.godot/imported/terminus8.fnt-c53081da3bb3b5b900bdbca015854126.fontdata"
+
+[deps]
+
+source_file="res://resources/font/terminus8.fnt"
+dest_files=["res://.godot/imported/terminus8.fnt-c53081da3bb3b5b900bdbca015854126.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

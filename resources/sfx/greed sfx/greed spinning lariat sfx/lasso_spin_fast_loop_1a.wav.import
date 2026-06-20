@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cskyhyy2hl7do"
+path="res://.godot/imported/lasso_spin_fast_loop_1a.wav-9a6cd86d83bc0c67e36b660319b122a7.sample"
+
+[deps]
+
+source_file="res://resources/sfx/greed sfx/greed spinning lariat sfx/lasso_spin_fast_loop_1a.wav"
+dest_files=["res://.godot/imported/lasso_spin_fast_loop_1a.wav-9a6cd86d83bc0c67e36b660319b122a7.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

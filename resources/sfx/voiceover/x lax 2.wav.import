@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://2clj13sm4qmd"
+path="res://.godot/imported/x lax 2.wav-47734aaf695901d62487de91b3e70b8b.sample"
+
+[deps]
+
+source_file="res://resources/sfx/voiceover/x lax 2.wav"
+dest_files=["res://.godot/imported/x lax 2.wav-47734aaf695901d62487de91b3e70b8b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

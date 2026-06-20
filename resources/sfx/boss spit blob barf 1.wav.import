@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d2cy3y68huq6g"
+path="res://.godot/imported/boss spit blob barf 1.wav-7111169e7b71ab1e9510c1ce141bd28f.sample"
+
+[deps]
+
+source_file="res://resources/sfx/boss spit blob barf 1.wav"
+dest_files=["res://.godot/imported/boss spit blob barf 1.wav-7111169e7b71ab1e9510c1ce141bd28f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bspogpv0x66oa"
+path="res://.godot/imported/strength 1.wav-1e734fb79651cf25b59b403c27ce6282.sample"
+
+[deps]
+
+source_file="res://resources/sfx/voiceover/strength 1.wav"
+dest_files=["res://.godot/imported/strength 1.wav-1e734fb79651cf25b59b403c27ce6282.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

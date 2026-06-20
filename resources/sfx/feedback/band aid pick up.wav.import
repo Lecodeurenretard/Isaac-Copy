@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://nf7lvrrwkqub"
+path="res://.godot/imported/band aid pick up.wav-088d91fd5f55d5bd2b9bcd8b0bf34cf3.sample"
+
+[deps]
+
+source_file="res://resources/sfx/feedback/band aid pick up.wav"
+dest_files=["res://.godot/imported/band aid pick up.wav-088d91fd5f55d5bd2b9bcd8b0bf34cf3.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

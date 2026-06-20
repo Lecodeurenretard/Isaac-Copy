@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://uetmyct5oy8q"
+path="res://.godot/imported/treasure room discoverb.ogg-bd82861837799229308ecb059ad67581.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/jingle ogg/treasure room discoverb.ogg"
+dest_files=["res://.godot/imported/treasure room discoverb.ogg-bd82861837799229308ecb059ad67581.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://4fw1ernja3is"
+path="res://.godot/imported/scythe break 02.wav-81f00b9ef2281c71df27e170b506bf4a.sample"
+
+[deps]
+
+source_file="res://resources/sfx/v2/scythe break 02.wav"
+dest_files=["res://.godot/imported/scythe break 02.wav-81f00b9ef2281c71df27e170b506bf4a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://xeb7rioeh6tr"
+path="res://.godot/imported/credit card 2.wav-a9de84aa29fa454f26246d8a2e26c586.sample"
+
+[deps]
+
+source_file="res://resources/sfx/voiceover/credit card 2.wav"
+dest_files=["res://.godot/imported/credit card 2.wav-a9de84aa29fa454f26246d8a2e26c586.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

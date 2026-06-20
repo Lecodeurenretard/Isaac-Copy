@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ewfq0d6tkrof"
+path="res://.godot/imported/bird flap.wav-438028e1612e6af1570571e5946d0ee8.sample"
+
+[deps]
+
+source_file="res://resources/sfx/bird flap.wav"
+dest_files=["res://.godot/imported/bird flap.wav-438028e1612e6af1570571e5946d0ee8.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

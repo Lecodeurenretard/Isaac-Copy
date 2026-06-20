@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bbc21hey62etc"
+path="res://.godot/imported/angel room appear v2_07.ogg-9578696040cd7e0dd61fc02ec54cb5af.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/jingle ogg/angel room appear v2_07.ogg"
+dest_files=["res://.godot/imported/angel room appear v2_07.ogg-9578696040cd7e0dd61fc02ec54cb5af.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

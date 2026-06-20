@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b63qayqproqcn"
+path="res://.godot/imported/isaac died_02.ogg-40c928ac0361f760b923d078c8cd9c23.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/jingle ogg/isaac died_02.ogg"
+dest_files=["res://.godot/imported/isaac died_02.ogg-40c928ac0361f760b923d078c8cd9c23.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

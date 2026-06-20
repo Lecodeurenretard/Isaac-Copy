@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bhmberr2loyny"
+path="res://.godot/imported/luck down 2.wav-ca7e0c63856239cc29332c168006e12f.sample"
+
+[deps]
+
+source_file="res://resources/sfx/voiceover/luck down 2.wav"
+dest_files=["res://.godot/imported/luck down 2.wav-ca7e0c63856239cc29332c168006e12f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

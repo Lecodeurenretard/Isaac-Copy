@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://xsfcnmtm2o52"
+path="res://.godot/imported/ragman 4.wav-1216c0ba5fc7134a8c711f1e8ce9646d.sample"
+
+[deps]
+
+source_file="res://resources/sfx/ragman 4.wav"
+dest_files=["res://.godot/imported/ragman 4.wav-1216c0ba5fc7134a8c711f1e8ce9646d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

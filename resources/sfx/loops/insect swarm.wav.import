@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://deb3v7jh5fegp"
+path="res://.godot/imported/insect swarm.wav-1ccec58e30966419ca10b16ef7576988.sample"
+
+[deps]
+
+source_file="res://resources/sfx/loops/insect swarm.wav"
+dest_files=["res://.godot/imported/insect swarm.wav-1ccec58e30966419ca10b16ef7576988.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://csu7w8hjj7un5"
+path="res://.godot/imported/child happy roar short 2.wav-04ecd56dcf6d1dcf22d31886f8b42ce1.sample"
+
+[deps]
+
+source_file="res://resources/sfx/child happy roar short 2.wav"
+dest_files=["res://.godot/imported/child happy roar short 2.wav-04ecd56dcf6d1dcf22d31886f8b42ce1.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

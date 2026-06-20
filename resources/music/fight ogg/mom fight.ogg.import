@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cbgbjkcgrmbs6"
+path="res://.godot/imported/mom fight.ogg-70d826899cca0e03e6cdf9816299c8fe.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/fight ogg/mom fight.ogg"
+dest_files=["res://.godot/imported/mom fight.ogg-70d826899cca0e03e6cdf9816299c8fe.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

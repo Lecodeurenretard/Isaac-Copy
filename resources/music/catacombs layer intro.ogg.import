@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bmatds2b28k3"
+path="res://.godot/imported/catacombs layer intro.ogg-fa4a993bea9d0ee2551b9c6cbf3d397a.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/catacombs layer intro.ogg"
+dest_files=["res://.godot/imported/catacombs layer intro.ogg-fa4a993bea9d0ee2551b9c6cbf3d397a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

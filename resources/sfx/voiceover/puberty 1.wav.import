@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://qfkrqqfx2llq"
+path="res://.godot/imported/puberty 1.wav-1d3eaaceb5221b4c2a6daab925a965d6.sample"
+
+[deps]
+
+source_file="res://resources/sfx/voiceover/puberty 1.wav"
+dest_files=["res://.godot/imported/puberty 1.wav-1d3eaaceb5221b4c2a6daab925a965d6.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

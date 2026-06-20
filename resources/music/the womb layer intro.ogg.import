@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://8fnkatd3vlty"
+path="res://.godot/imported/the womb layer intro.ogg-b4e7ca4d89861d7fb49ca98c0c54ec02.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/the womb layer intro.ogg"
+dest_files=["res://.godot/imported/the womb layer intro.ogg-b4e7ca4d89861d7fb49ca98c0c54ec02.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

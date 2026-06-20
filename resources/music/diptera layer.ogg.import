@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cct44f1hic8a1"
+path="res://.godot/imported/diptera layer.ogg-9b7684de926cd21211ad65b88204c8a5.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/diptera layer.ogg"
+dest_files=["res://.godot/imported/diptera layer.ogg-9b7684de926cd21211ad65b88204c8a5.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

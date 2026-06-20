@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ci1xcny7dn00l"
+path="res://.godot/imported/cerebrum dispersio (boss alt) end.ogg-1642963deec1a4528a17998bcb60507e.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/afterbirth/cerebrum dispersio (boss alt) end.ogg"
+dest_files=["res://.godot/imported/cerebrum dispersio (boss alt) end.ogg-1642963deec1a4528a17998bcb60507e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

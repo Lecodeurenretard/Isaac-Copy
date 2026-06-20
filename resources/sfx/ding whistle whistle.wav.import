@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b5s8jr5paygmu"
+path="res://.godot/imported/ding whistle whistle.wav-674bc6c6ae42fd247eb54704b4326eda.sample"
+
+[deps]
+
+source_file="res://resources/sfx/ding whistle whistle.wav"
+dest_files=["res://.godot/imported/ding whistle whistle.wav-674bc6c6ae42fd247eb54704b4326eda.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

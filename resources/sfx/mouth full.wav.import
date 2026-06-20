@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://vq3oii67v3ds"
+path="res://.godot/imported/mouth full.wav-90c9811e2cd1be3e015175f6acbdd45d.sample"
+
+[deps]
+
+source_file="res://resources/sfx/mouth full.wav"
+dest_files=["res://.godot/imported/mouth full.wav-90c9811e2cd1be3e015175f6acbdd45d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,16 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://cet0twqoo2smm"
+valid=false
+
+[deps]
+
+source_file="res://resources/font/luamini.fnt"
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

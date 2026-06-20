@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b8bp4as6c1tuc"
+path="res://.godot/imported/boss lite hiss 3.wav-736015b745078908421f09eb934235ef.sample"
+
+[deps]
+
+source_file="res://resources/sfx/boss lite hiss 3.wav"
+dest_files=["res://.godot/imported/boss lite hiss 3.wav-736015b745078908421f09eb934235ef.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

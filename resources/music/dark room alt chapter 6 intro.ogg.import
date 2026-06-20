@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bu10fe7ctsqln"
+path="res://.godot/imported/dark room alt chapter 6 intro.ogg-7407f10912912dbcac042c0ead4585ce.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/dark room alt chapter 6 intro.ogg"
+dest_files=["res://.godot/imported/dark room alt chapter 6 intro.ogg-7407f10912912dbcac042c0ead4585ce.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

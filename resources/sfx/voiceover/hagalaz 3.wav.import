@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b1od2x7rs1b0b"
+path="res://.godot/imported/hagalaz 3.wav-ca68c98c04be774627d4af372b9ce67a.sample"
+
+[deps]
+
+source_file="res://resources/sfx/voiceover/hagalaz 3.wav"
+dest_files=["res://.godot/imported/hagalaz 3.wav-ca68c98c04be774627d4af372b9ce67a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

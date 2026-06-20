@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bbpv6x7v86cup"
+path="res://.godot/imported/fly cough 4.wav-97708ddd1c3f9a1f6a5fa0cd6645f417.sample"
+
+[deps]
+
+source_file="res://resources/sfx/fly cough 4.wav"
+dest_files=["res://.godot/imported/fly cough 4.wav-97708ddd1c3f9a1f6a5fa0cd6645f417.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

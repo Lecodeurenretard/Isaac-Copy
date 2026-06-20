@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://duuffyhv8hjr8"
+path="res://.godot/imported/mom muffle.wav-715e2b09b726034c8963644180d43044.sample"
+
+[deps]
+
+source_file="res://resources/sfx/mom/mom muffle.wav"
+dest_files=["res://.godot/imported/mom muffle.wav-715e2b09b726034c8963644180d43044.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

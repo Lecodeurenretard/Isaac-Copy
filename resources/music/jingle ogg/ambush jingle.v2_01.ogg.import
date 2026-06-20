@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dx3ack8j5i1nb"
+path="res://.godot/imported/ambush jingle.v2_01.ogg-ec7c0e1789f42642da25f046bd895cfb.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/jingle ogg/ambush jingle.v2_01.ogg"
+dest_files=["res://.godot/imported/ambush jingle.v2_01.ogg-ec7c0e1789f42642da25f046bd895cfb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

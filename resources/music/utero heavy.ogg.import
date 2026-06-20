@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b2rbdncgqmbti"
+path="res://.godot/imported/utero heavy.ogg-4f5003628799efb342d648e20af8f3b2.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/utero heavy.ogg"
+dest_files=["res://.godot/imported/utero heavy.ogg-4f5003628799efb342d648e20af8f3b2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

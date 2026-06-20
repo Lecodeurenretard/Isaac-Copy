@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://6aq8j4vaw0yc"
+path="res://.godot/imported/pulso profundum (dank depths ) layer.ogg-0c99e5fd1e047b324a1cc6075a32d34b.oggvorbisstr"
+
+[deps]
+
+source_file="res://resources/music/afterbirth/pulso profundum (dank depths ) layer.ogg"
+dest_files=["res://.godot/imported/pulso profundum (dank depths ) layer.ogg-0c99e5fd1e047b324a1cc6075a32d34b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d3iacrt2uq05m"
+path="res://.godot/imported/spider coughs.wav-e7b3410fe535e6ef21ffd109b58f11a5.sample"
+
+[deps]
+
+source_file="res://resources/sfx/spider coughs.wav"
+dest_files=["res://.godot/imported/spider coughs.wav-e7b3410fe535e6ef21ffd109b58f11a5.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

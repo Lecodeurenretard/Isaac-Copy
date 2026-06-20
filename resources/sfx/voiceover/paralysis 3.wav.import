@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d0vfukg4synpa"
+path="res://.godot/imported/paralysis 3.wav-5cbd1a89655a18dfa3c0b295212060e8.sample"
+
+[deps]
+
+source_file="res://resources/sfx/voiceover/paralysis 3.wav"
+dest_files=["res://.godot/imported/paralysis 3.wav-5cbd1a89655a18dfa3c0b295212060e8.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

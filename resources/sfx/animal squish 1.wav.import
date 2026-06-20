@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d288ho2bngl2n"
+path="res://.godot/imported/animal squish 1.wav-72a6cc607bce73820d717e09c814915e.sample"
+
+[deps]
+
+source_file="res://resources/sfx/animal squish 1.wav"
+dest_files=["res://.godot/imported/animal squish 1.wav-72a6cc607bce73820d717e09c814915e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
