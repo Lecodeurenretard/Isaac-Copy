@@ -2,7 +2,7 @@ class_name RoomData extends Resource
 # file specs: https://github.com/Basement-Renovator/basement-renovator/blob/main/resources/Notes/Room%20Format.txt
 # actual parser: https://github.com/Basement-Renovator/basement-renovator/blob/main/src/roomconvert.py#L352
 
-enum _Shape {
+enum Shape {
 	MED_MED = 1,
 	MED_SMALL,
 	SMALL_MED,
@@ -11,10 +11,10 @@ enum _Shape {
 	MED_LARGE,
 	SMALL_LARGE,
 	LARGE_LARGE,
-	CORNER1,
-	CORNER2,
-	CORNER3,
-	CORNER4
+	L_MIRRORED,
+	L,
+	R_MIRRORED,	# r shaped
+	R
 }
 
 static func uint_to_sint(x : int, number_of_bits : int) -> int:
@@ -30,8 +30,8 @@ class Door extends Resource:
 	
 	static func from_file(file_handle : FileAccess) -> Door:
 		var res = Door.new()
-		res.x = Room.uint_to_sint(file_handle.get_16(), 16)
-		res.y = Room.uint_to_sint(file_handle.get_16(), 16)
+		res.x = RoomData.uint_to_sint(file_handle.get_16(), 16)
+		res.y = RoomData.uint_to_sint(file_handle.get_16(), 16)
 		if [res.x, res.y] not in [[6,-1], [13,3], [6,7], [-1,3]]:
 			printerr("Unsual door coordinates: (%d, %d)." % [res.x, res.y])
 		
@@ -51,8 +51,8 @@ class Entity extends Resource:
 		return "(%d, %d) %d %d" % [x, y, type, variant]
 	
 	static func from_file(file_handle : FileAccess) -> Array:
-		var x = Room.uint_to_sint(file_handle.get_16(), 16)
-		var y = Room.uint_to_sint(file_handle.get_16(), 16)
+		var x = RoomData.uint_to_sint(file_handle.get_16(), 16)
+		var y = RoomData.uint_to_sint(file_handle.get_16(), 16)
 		var entity_count = file_handle.get_8()
 		
 		var res = Array()
@@ -72,12 +72,13 @@ class Entity extends Resource:
 
 @export var room_type : int
 @export var variant : int
-@export var subvariant : int
-#@export var difficulty : int	## THIS SHOULD NOT BE USED. Not sure if that's difficulty.
+@export var subtype : int
+@export var difficulty : int
 @export var name : String
+@export var weight : float
 @export var width : int
 @export var height : int
-@export var shape : _Shape = _Shape.MED_MED
+@export var shape : Shape = Shape.MED_MED
 @export var doors : Array[Door]
 @export var entities : Array[Entity]
 
@@ -98,21 +99,14 @@ static func from_file(filename : StringName) -> Array:
 	
 	var room_count = file.get_32()
 	for u in range(room_count):
-		print_debug(u)
 		var room := RoomData.new()
 		room.room_type = file.get_32()
-		if room.room_type not in [1, 18]:
-			printerr("Unusual room type: ", room.room_type)
-		
 		room.variant = file.get_32()
-		if room.variant not in [0, 1, 6]:
-			printerr("Unusual room variant: ", room.variant)
+		room.subtype = file.get_32()
 		
-		room.subvariant = file.get_32()
-		if room.subvariant > 64:
-			printerr("Unusual room subvariant: ", room.subvariant)
-		
-		file.get_8()	# difficulty?
+		room.difficulty = file.get_8()
+		if room.difficulty not in [1, 5, 10, 15, 20]:
+			printerr("Unusual difficulty value: ", room.difficulty)
 		
 		var name_length := file.get_16()
 		var name_bytes := PackedByteArray()
@@ -120,9 +114,7 @@ static func from_file(filename : StringName) -> Array:
 			name_bytes.append(file.get_8())
 		room.name = name_bytes.get_string_from_utf8()
 		
-		if file.get_float() != 1.0:
-			printerr("The file might not be correctly formatted (a float representing 1.0 should be after the room name).")
-		
+		room.weight = file.get_float()
 		room.width = file.get_8()
 		if room.width not in [13, 26]:
 			printerr("Invalid room width: ", room.width, " (must be 13 or 26)")
@@ -133,7 +125,7 @@ static func from_file(filename : StringName) -> Array:
 			printerr("Invalid room height: ", room.height, " (must be 7 or 14)") 
 			return [null]
 		
-		room.shape = file.get_8() as _Shape
+		room.shape = file.get_8() as Shape
 		
 		var door_entry_count = file.get_8()  
 		var entity_entry_count = file.get_16()
