@@ -2,6 +2,12 @@ class_name RoomData extends Resource
 # file specs: https://github.com/Basement-Renovator/basement-renovator/blob/main/resources/Notes/Room%20Format.txt
 # actual parser: https://github.com/Basement-Renovator/basement-renovator/blob/main/src/roomconvert.py#L352
 
+static func uint_to_sint(x : int, number_of_bits : int) -> int:
+	# bit meth
+	var mask = 1 << (number_of_bits - 1)
+	var res = x & ~mask
+	return res - 2**(number_of_bits-1) if x & mask else res
+
 enum Shape {
 	MED_MED = 1,
 	MED_SMALL,
@@ -17,58 +23,31 @@ enum Shape {
 	R
 }
 
-static func uint_to_sint(x : int, number_of_bits : int) -> int:
-	# bit meth
-	var mask = 1 << (number_of_bits - 1)
-	var res = x & ~mask
-	return res - 2**(number_of_bits-1) if x & mask else res
-
-class Door extends Resource:
-	var x : int
-	var y : int
-	var exists : bool
+## Return the room dimensions in tiles.
+## L and r rooms are treated as LARGE_LARGE
+static func _get_shape_dimensions(s : Shape) -> Array[int]:
+	const WALL_SIZE := 2
+	const MED_H   := 14		# A room is 14x8 tiles if walls are not counted
+	const SMALL_H := MED_H / 2
+	const LARGE_H := MED_H * 2
+	const MED_V   := 8
+	const SMALL_V := MED_V / 2
+	const LARGE_V := MED_V * 2
 	
-	static func from_file(file_handle : FileAccess) -> Door:
-		var res = Door.new()
-		res.x = RoomData.uint_to_sint(file_handle.get_16(), 16)
-		res.y = RoomData.uint_to_sint(file_handle.get_16(), 16)
-		if [res.x, res.y] not in [[6,-1], [13,3], [6,7], [-1,3]]:
-			printerr("Unsual door coordinates: (%d, %d)." % [res.x, res.y])
+	match s:
+		Shape.MED_MED:     return [WALL_SIZE * 2 + MED_H  , WALL_SIZE * 2 + MED_V] 
+		Shape.MED_SMALL:   return [WALL_SIZE * 2 + MED_H  , WALL_SIZE * 2 + SMALL_V] 
+		Shape.SMALL_MED:   return [WALL_SIZE * 2 + SMALL_H, WALL_SIZE * 2 + MED_V] 
+		Shape.LARGE_MED:   return [WALL_SIZE * 2 + LARGE_H, WALL_SIZE * 2 + MED_V] 
+		Shape.LARGE_SMALL: return [WALL_SIZE * 2 + LARGE_H, WALL_SIZE * 2 + SMALL_V] 
+		Shape.MED_LARGE:   return [WALL_SIZE * 2 + MED_H  , WALL_SIZE * 2 + LARGE_V] 
+		Shape.SMALL_LARGE: return [WALL_SIZE * 2 + SMALL_H, WALL_SIZE * 2 + LARGE_V] 
 		
-		res.exists = bool(file_handle.get_8())
-		return res
-	
-	func _to_string() -> String:
-		return "(%d, %d) %s" % [x, y, str(exists)]
-
-class Entity extends Resource: 
-	var x : int
-	var y : int
-	var type : int
-	var variant : int
-	var subvariant : int
-	func _to_string() -> String:
-		return "(%d, %d) %d %d" % [x, y, type, variant]
-	
-	static func from_file(file_handle : FileAccess) -> Array:
-		var x = RoomData.uint_to_sint(file_handle.get_16(), 16)
-		var y = RoomData.uint_to_sint(file_handle.get_16(), 16)
-		var entity_count = file_handle.get_8()
-		
-		var res = Array()
-		for i in range(entity_count):
-			var entity := Entity.new()
-			entity.x = x
-			entity.y = y
-			entity.type = file_handle.get_16()
-			entity.variant = file_handle.get_16()
-			entity.subvariant = file_handle.get_16()
-			res.append(entity)
-			
-			if file_handle.get_float() != 1.0:
-				printerr("The file might not be correctly formatted (last entity entry should be 1.0).") 
-		
-		return res
+		Shape.L_MIRRORED, Shape.R_MIRRORED, Shape.L, Shape.R, Shape.LARGE_LARGE:
+			return [WALL_SIZE * 2 + LARGE_H, WALL_SIZE * 2 + LARGE_V]
+		_:
+			printerr("Unknown shape encountered.")
+			return []
 
 @export var room_type : int
 @export var variant : int
@@ -76,11 +55,11 @@ class Entity extends Resource:
 @export var difficulty : int
 @export var name : String
 @export var weight : float
-@export var width : int
-@export var height : int
+@export var _width : int
+@export var _height : int
 @export var shape : Shape = Shape.MED_MED
-@export var doors : Array[Door]
-@export var entities : Array[Entity]
+@export var doors : Array[DoorRoomData]
+@export var entities : Array[EntityRoomData]
 
 
 static func from_file(filename : StringName) -> Array:
@@ -115,13 +94,13 @@ static func from_file(filename : StringName) -> Array:
 		room.name = name_bytes.get_string_from_utf8()
 		
 		room.weight = file.get_float()
-		room.width = file.get_8()
-		if room.width not in [13, 26]:
+		room._width = file.get_8()
+		if room._width not in [13, 26]:
 			printerr("Invalid room width: ", room.width, " (must be 13 or 26)")
 			return [null]
 		
-		room.height = file.get_8()
-		if room.height not in [7, 14]:
+		room._height = file.get_8()
+		if room._height not in [7, 14]:
 			printerr("Invalid room height: ", room.height, " (must be 7 or 14)") 
 			return [null]
 		
@@ -131,9 +110,12 @@ static func from_file(filename : StringName) -> Array:
 		var entity_entry_count = file.get_16()
 		for v in range(door_entry_count):
 			# also advance the file cursor (implicit reference)
-			room.doors.append(Door.from_file(file))
+			room.doors.append(DoorRoomData.from_file(file))
 		for v in range(entity_entry_count):
-			room.entities.append_array(Entity.from_file(file))
+			room.entities.append_array(EntityRoomData.from_file(file))
 		
 		res.append(room)
 	return res
+
+func get_dimensions() -> Array[int]:
+	return _get_shape_dimensions(shape)
