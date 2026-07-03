@@ -1,10 +1,10 @@
 class_name EntityRoomData extends Resource 
-var x : int
-var y : int
-var type : int
-var variant : int
-var subtype : int
-var weight : float
+@export var x : int
+@export var y : int
+@export var type : int
+@export var variant : int
+@export var subtype : int
+@export var weight : float
 
 static func from_file(file_handle : FileAccess) -> Array:
 	var x_entities = RoomData.uint_to_sint(file_handle.get_16(), 16)

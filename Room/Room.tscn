@@ -1,28 +1,20 @@
 [gd_scene format=3 uid="uid://d2n8h82bv3jmm"]
 
-[ext_resource type="Script" uid="uid://df7xye7phkj3h" path="res://Room/scripts/RoomData.gd" id="2_gr7xt"]
-[ext_resource type="Script" uid="uid://47i07jahx0pc" path="res://Room/scripts/DoorRoomData.gd" id="2_soc6w"]
 [ext_resource type="Script" uid="uid://1p643nkjeppx" path="res://Room/scripts/Room.gd" id="2_vdjvi"]
-[ext_resource type="Script" uid="uid://b8xgpeh8es1k6" path="res://Room/scripts/EnemyRoomData.gd" id="3_2qh2i"]
 [ext_resource type="TileSet" uid="uid://cfg0sblnmiv2a" path="res://Room/room_tileset.tres" id="3_on5nr"]
-[ext_resource type="Texture2D" uid="uid://nybwjucdwd1b" path="res://resources/gfx/grid/door_01_normaldoor.png" id="4_gr7xt"]
-
-[sub_resource type="Resource" id="Resource_soc6w"]
-script = ExtResource("2_gr7xt")
-metadata/_custom_type_script = "uid://df7xye7phkj3h"
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6mart"]
-atlas = ExtResource("4_gr7xt")
-region = Rect2(8, 8, 50, 35)
+[ext_resource type="Texture2D" uid="uid://ufu3ohqbtdah" path="res://Room/door_texture.tres" id="6_soc6w"]
 
 [node name="Node2D" type="Node2D" unique_id=1103732468]
+scale = Vector2(2, 2)
 script = ExtResource("2_vdjvi")
-data = SubResource("Resource_soc6w")
+data_file = "res://resources/rooms/01.basement.stb"
 
 [node name="LevelLayer" type="TileMapLayer" parent="." unique_id=941747764]
 scale = Vector2(1.035, 1.035)
 tile_set = ExtResource("3_on5nr")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1302806293]
+[node name="DoorSprite" type="Sprite2D" parent="." unique_id=1302806293]
+editor_description = "Doesn't interact with the code, is here for testing purpose."
 visible = false
-texture = SubResource("AtlasTexture_6mart")
+position = Vector2(249, 39)
+texture = ExtResource("6_soc6w")

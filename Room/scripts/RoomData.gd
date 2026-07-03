@@ -12,10 +12,10 @@ enum Shape {
 	MED_MED = 1,
 	MED_SMALL,
 	SMALL_MED,
-	LARGE_MED,
-	LARGE_SMALL,
 	MED_LARGE,
 	SMALL_LARGE,
+	LARGE_MED,
+	LARGE_SMALL,
 	LARGE_LARGE,
 	L_MIRRORED,
 	L,
@@ -25,29 +25,31 @@ enum Shape {
 
 ## Return the room dimensions in tiles.
 ## L and r rooms are treated as LARGE_LARGE
-static func _get_shape_dimensions(s : Shape) -> Array[int]:
+static func _get_shape_dimensions(s : Shape) -> Vector2i:
 	const WALL_SIZE := 2
-	const MED_H   := 14		# A room is 14x8 tiles if walls are not counted
-	const SMALL_H := MED_H / 2
-	const LARGE_H := MED_H * 2
-	const MED_V   := 8
-	const SMALL_V := MED_V / 2
-	const LARGE_V := MED_V * 2
+	const MED_H   := 13		# A room is 14x8 tiles if walls are not counted
+	const MED_V   := 7
+	const SMALL_H := 5
+	const SMALL_V := 3
+	const LARGE_H := 26
+	const LARGE_V := 14
 	
+	var dim_no_wall : Vector2i
 	match s:
-		Shape.MED_MED:     return [WALL_SIZE * 2 + MED_H  , WALL_SIZE * 2 + MED_V] 
-		Shape.MED_SMALL:   return [WALL_SIZE * 2 + MED_H  , WALL_SIZE * 2 + SMALL_V] 
-		Shape.SMALL_MED:   return [WALL_SIZE * 2 + SMALL_H, WALL_SIZE * 2 + MED_V] 
-		Shape.LARGE_MED:   return [WALL_SIZE * 2 + LARGE_H, WALL_SIZE * 2 + MED_V] 
-		Shape.LARGE_SMALL: return [WALL_SIZE * 2 + LARGE_H, WALL_SIZE * 2 + SMALL_V] 
-		Shape.MED_LARGE:   return [WALL_SIZE * 2 + MED_H  , WALL_SIZE * 2 + LARGE_V] 
-		Shape.SMALL_LARGE: return [WALL_SIZE * 2 + SMALL_H, WALL_SIZE * 2 + LARGE_V] 
+		Shape.MED_MED:     dim_no_wall = Vector2i(MED_H, MED_V) 
+		Shape.MED_SMALL:   dim_no_wall = Vector2i(MED_H, SMALL_V) 
+		Shape.SMALL_MED:   dim_no_wall = Vector2i(SMALL_H, MED_V) 
+		Shape.LARGE_MED:   dim_no_wall = Vector2i(LARGE_H, MED_V) 
+		Shape.LARGE_SMALL: dim_no_wall = Vector2i(LARGE_H, SMALL_V) 
+		Shape.MED_LARGE:   dim_no_wall = Vector2i(MED_H, LARGE_V) 
+		Shape.SMALL_LARGE: dim_no_wall = Vector2i(SMALL_H, LARGE_V) 
 		
 		Shape.L_MIRRORED, Shape.R_MIRRORED, Shape.L, Shape.R, Shape.LARGE_LARGE:
-			return [WALL_SIZE * 2 + LARGE_H, WALL_SIZE * 2 + LARGE_V]
+			dim_no_wall = Vector2i(LARGE_H, LARGE_V)
 		_:
-			printerr("Unknown shape encountered.")
-			return []
+			printerr("Unknown shape '%d' encountered." % s)
+			return Vector2i(-1, -1)
+	return 2 * Vector2i(WALL_SIZE, WALL_SIZE) + dim_no_wall
 
 @export var room_type : int
 @export var variant : int
@@ -117,5 +119,5 @@ static func from_file(filename : StringName) -> Array:
 		res.append(room)
 	return res
 
-func get_dimensions() -> Array[int]:
+func get_dimensions() -> Vector2i:
 	return _get_shape_dimensions(shape)
