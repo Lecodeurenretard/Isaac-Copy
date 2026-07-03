@@ -1,1 +1,1 @@
-This directory contains the game files as they are in Repentance+.
+Every asset has been exported from the game (Repentance+ DLC) and all content in this directory was created by the Binding of Issac team.
