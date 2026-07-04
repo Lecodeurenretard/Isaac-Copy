@@ -6,6 +6,7 @@ class_name Room extends Node2D
 #@export var data : RoomData
 
 @onready var background = $LevelLayer 
+var stage_id := 1
 
 enum Direction {
 	NONE  = -1,
@@ -14,6 +15,16 @@ enum Direction {
 	LEFT  = 2,
 	UP    = 3,
 }
+
+## Return a function that repeats [minimum, maximum) in a circular pattern,
+## For example, clamp_loopi(m, M, 0) returns f() such as
+## f(0) = m, f(1) = m + 1, ..., f(M-1) = M - 1, f(M) = m, f(M+1) = m + 1, ...
+##
+## The shift parameter shifts right the sequence. 
+func gen_circular_clamp(minimum : int, maximum : int, shift : int) -> Callable:
+	# play with this formula: https://www.desmos.com/calculator/lzaffyk71w
+	return func(n : int) -> int:
+		return (n - shift) % (maximum - minimum) + minimum
 
 func _set_corners(top_left : Vector2i, source_id : int, atlas_coord : Vector2i, dim : Vector2i):
 	var bottom_right = dim - Vector2i(1, 1) - top_left
@@ -30,19 +41,21 @@ func _set_symetrical(top_left : Vector2i, source_id : int, atlas_coord : Vector2
 		background.set_cell(Vector2i(top_left.x, line_length - 1 - top_left.y), source_id, atlas_coord, TileSetAtlasSource.TRANSFORM_FLIP_V)
 
 # TODO: Add support for L and r rooms
-func generate_tilemap(stage_id : int):
+func generate_tilemap():
 	var dimensions := data.get_dimensions()
 	
 	# outer corners
 	_set_corners(Vector2i(0, 0), stage_id, Vector2i(0, 0), dimensions)
 	
 	# walls
+	var gen_wall_x := gen_circular_clamp(2, 9, 2 )
+	var gen_wall_y := gen_circular_clamp(2, 6, 2 )
 	for x in range(1, dimensions.x-1):
-		var atlas_x := ((x-2) % 7) + 2	# 2, 3, 4, 5, 6, 7, 8, 2, 3, ...
+		var atlas_x : int = gen_wall_x.call(x)
 		_set_symetrical(Vector2i(x, 0), stage_id, Vector2i(atlas_x, 0), dimensions.y, false)
 		_set_symetrical(Vector2i(x, 1), stage_id, Vector2i(atlas_x, 1), dimensions.y, false)
 	for y in range(1, dimensions.y-1):
-		var atlas_y := ((y-2) % 3) + 2
+		var atlas_y : int = gen_wall_y.call(y)
 		_set_symetrical(Vector2i(0, y), stage_id, Vector2i(0, atlas_y), dimensions.x, true)
 		_set_symetrical(Vector2i(1, y), stage_id, Vector2i(1, atlas_y), dimensions.x, true)
 	
@@ -50,21 +63,26 @@ func generate_tilemap(stage_id : int):
 	_set_corners(Vector2i(1, 1), stage_id, Vector2i(1, 1), dimensions)
 	
 	# floor tiles next to walls
+	var gen_floor_x := gen_circular_clamp(3, 9, 3)
+	var gen_floor_y := gen_circular_clamp(3, 6, 3)
+	
 	_set_corners(Vector2i(2, 2), stage_id, Vector2i(2, 2), dimensions)
 	for x in range(3, dimensions.x-3):
-		var atlas_x := ((x-3) % 6) + 3	# 3, 4, 5, 6, 7, 8, 3, 4, ...
+		var atlas_x : int = gen_floor_x.call(x)
 		_set_symetrical(Vector2i(x, 2), stage_id, Vector2i(atlas_x, 2), dimensions.y, false)
 	for y in range(3, dimensions.y-3):
-		var atlas_y := ((y-3) % 3) + 3
+		var atlas_y : int = gen_floor_y.call(y)
 		_set_symetrical(Vector2i(2, y), stage_id, Vector2i(2, atlas_y), dimensions.x, true)
 	
 	# floor
 	for x in range(3, dimensions.x-3):
 		for y in range(3, dimensions.y-3):
-			background.set_cell(Vector2i(x, y), stage_id, Vector2i(8, 5))
+			var atlas_x : int = gen_floor_x.call(x)
+			var atlas_y : int = gen_floor_y.call(y)
+			background.set_cell(Vector2i(x, y), stage_id, Vector2i(atlas_x, atlas_y))
 
 # Door parsing code: https://github.com/Basement-Renovator/basement-renovator/blob/main/BasementRenovator.py#L2177
-func generate_doors(_stage_id : int):
+func generate_doors():
 	for door in data.doors:
 		if not door.exists:
 			continue
@@ -81,14 +99,18 @@ func generate_doors(_stage_id : int):
 		if door_dir == Direction.NONE:
 			printerr("Invalid door position: (%d, %d)" % [door.x, door.y])
 		sprite.rotation_degrees = -90 + int(door_dir) * 90	
-		sprite.texture = load("uid://ufu3ohqbtdah")	# TODO: Add level specific doors
+		sprite.texture = load("uid://ufu3ohqbtdah")
 		
 		var sprite_background := Sprite2D.new()
 		sprite_background.texture = load("uid://ufu3ohqbtdah").duplicate()
 		sprite_background.texture.region.position.x = 71.8
+		sprite_background.scale = Vector2(1.3, 1.3)
 		sprite.add_child(sprite_background)
 		
 		$LevelLayer.add_child(sprite)
+		sprite.z_index = 10
+		sprite_background.z_index = -5
+		
 
 func _get_door_dir(door : DoorRoomData) -> Direction:
 	if !door.exists:
@@ -116,7 +138,29 @@ func _get_door_dir(door : DoorRoomData) -> Direction:
 	
 	return Direction.NONE
 
+
+func _change_stage(new_stage : int) -> void:
+	stage_id = new_stage
+	var tilemap_dim : Rect2i = $LevelLayer.get_used_rect()
+	for x in range(tilemap_dim.position.x, tilemap_dim.end.x + 1):
+		for y in range(tilemap_dim.position.y, tilemap_dim.end.y + 1):
+			var pos := Vector2i(x, y)
+			$LevelLayer.set_cell(
+				pos,
+				stage_id, 
+				$LevelLayer.get_cell_atlas_coords(pos),
+				$LevelLayer.get_cell_alternative_tile(pos),
+			)
+
 func _ready() -> void:
-	var stage_id := 1
-	generate_tilemap(stage_id)
-	generate_doors(stage_id)
+	generate_tilemap()
+	generate_doors()
+
+func _process(_delta: float) -> void:
+	if Input.is_action_just_pressed("dbg_next_floor"):
+		var new_id := stage_id + 1
+		if new_id == 7:	# Necropolis -> Burning Basement 
+			new_id = 13
+		if new_id == 16:
+			new_id = 0
+		_change_stage(new_id)
