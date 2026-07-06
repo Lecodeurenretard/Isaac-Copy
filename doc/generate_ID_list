@@ -16,7 +16,10 @@ cd ..
 output_file="id_list.md"
 echo -e "<!--This file was automatically generated, do not change it manually.-->\n" > $output_file
 echo "# Every entity ID by DLC" >> $output_file
-echo "Data from [Basement Renovator](https://github.com/Basement-Renovator/basement-renovator/blob/main/resources/) (resources/Entities*.xml)" >> $output_file
+echo "Source: Basement Renovator in those files: [resources/Entities*.xml](https://github.com/Basement-Renovator/basement-renovator/blob/main/resources/)" >> $output_file
+
+echo ""
+echo "You can find the entity's sprite by searching its ID in [this directory](https://github.com/Basement-Renovator/basement-renovator/tree/main/resources/Entities)."
 
 echo "## Rebirth" >> $output_file
 cat temp/dlc0 >> $output_file

@@ -1,0 +1,21 @@
+name: Run-Scripts
+
+on:
+  push:
+    paths:
+      - 'doc/generate_ID_list'
+  pull_request:
+    paths:
+      - 'doc/generate_ID_list'
+
+defaults:
+  run:
+    working-directory: ./doc
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Update ID list
+      run: ./generate_ID_list
