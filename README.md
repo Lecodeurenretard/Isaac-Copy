@@ -112,4 +112,8 @@ struct SingularEntity {
 	subtype : u16,
 	weight : float,
 }
-```-->
+```
+-->
+
+### Entity ID list
+I made [a script](doc/generate_ID_list) that generate the list from [Basement Renovator](https://github.com/Basement-Renovator/basement-renovator/blob/main/resources/)'s internal XML files: [doc/id_list.md](doc/id_list.md).

@@ -1,0 +1,36 @@
+#!/bin/bash
+
+mkdir temp
+cd temp
+curl "https://raw.githubusercontent.com/Basement-Renovator/basement-renovator/main/resources/EntitiesRebirth.xml"        > dlc0.xml
+curl "https://raw.githubusercontent.com/Basement-Renovator/basement-renovator/main/resources/EntitiesAfterbirth.xml"     > dlc1.xml
+curl "https://raw.githubusercontent.com/Basement-Renovator/basement-renovator/main/resources/EntitiesAfterbirthPlus.xml" > dlc2.xml
+curl "https://raw.githubusercontent.com/Basement-Renovator/basement-renovator/main/resources/EntitiesRepentance.xml"     > dlc3.xml
+curl "https://raw.githubusercontent.com/Basement-Renovator/basement-renovator/main/resources/EntitiesRepentancePlus.xml" > dlc4.xml
+
+for i in 0 1 2 3 4; do
+    python3 ../format_IDs.py "dlc$i.xml" > "dlc$i"
+done
+cd ..
+
+output_file="id_list.md"
+echo -e "<!--This file was automatically generated, do not change it manually.-->\n" > $output_file
+echo "# Every entity ID by DLC" >> $output_file
+echo "Data from [Basement Renovator](https://github.com/Basement-Renovator/basement-renovator/blob/main/resources/) (resources/Entities*.xml)" >> $output_file
+
+echo "## Rebirth" >> $output_file
+cat temp/dlc0 >> $output_file
+
+echo "## Afterbirth" >> $output_file
+cat temp/dlc1 >> $output_file
+
+echo "## Afterbirth+" >> $output_file
+cat temp/dlc2 >> $output_file
+
+echo "## Repentance" >> $output_file
+cat temp/dlc3 >> $output_file
+
+echo "## Repentance+" >> $output_file
+cat temp/dlc4 >> $output_file
+
+rm -r temp
