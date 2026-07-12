@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://c6dmi18f38rut"]
+
+[ext_resource type="Script" uid="uid://b3vutpoiog50e" path="res://Entity/Entity.gd" id="1_qkwct"]
+[ext_resource type="Texture2D" uid="uid://c70ykqxyeg5eo" path="res://resources/gfx/monsters/rebirth/monster_229_tumor.png" id="2_q5pqp"]
+[ext_resource type="Texture2D" uid="uid://bhjfa0davimk" path="res://resources/gfx/shadow.png" id="3_q5pqp"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sko6s"]
+radius = 3.0
+height = 16.0
+
+[sub_resource type="Animation" id="Animation_q5pqp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprites/template:texture:region")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(47.575, 0, 44, 44)]
+}
+
+[sub_resource type="Animation" id="Animation_4h7t2"]
+resource_name = "new_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprites/template:texture:region")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(47.575, 0, 44, 44)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_q5pqp"]
+_data = {
+&"RESET": SubResource("Animation_q5pqp"),
+&"new_animation": SubResource("Animation_4h7t2")
+}
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_on5nr"]
+atlas = ExtResource("2_q5pqp")
+region = Rect2(47.575, 0, 44, 44)
+
+[node name="Entity" type="CharacterBody2D" unique_id=486703510]
+position = Vector2(557, 379)
+script = ExtResource("1_qkwct")
+id = 32
+metadata/_custom_type_script = "uid://b3vutpoiog50e"
+
+[node name="Hitbox" type="CollisionShape2D" parent="." unique_id=782996348]
+position = Vector2(0, 20)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_sko6s")
+
+[node name="SpriteShadow" type="Sprite2D" parent="Hitbox" unique_id=656295768]
+visible = false
+rotation = -1.5707964
+texture = ExtResource("3_q5pqp")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=959284026]
+libraries/ = SubResource("AnimationLibrary_q5pqp")
+
+[node name="Sprites" type="Node2D" parent="." unique_id=190053482]
+
+[node name="template" type="Sprite2D" parent="Sprites" unique_id=595485605]
+visible = false
+position = Vector2(15, 0)
+texture = SubResource("AtlasTexture_on5nr")
