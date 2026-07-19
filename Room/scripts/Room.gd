@@ -41,7 +41,7 @@ func _set_symetrical(top_left : Vector2i, source_id : int, atlas_coord : Vector2
 		background.set_cell(Vector2i(top_left.x, line_length - 1 - top_left.y), source_id, atlas_coord, TileSetAtlasSource.TRANSFORM_FLIP_V)
 
 # TODO: Add support for L and r rooms
-func generate_tilemap():
+func _generate_tilemap():
 	var dimensions := data.get_dimensions()
 	
 	# outer corners
@@ -82,7 +82,7 @@ func generate_tilemap():
 			background.set_cell(Vector2i(x, y), stage_id, Vector2i(atlas_x, atlas_y))
 
 # Door parsing code: https://github.com/Basement-Renovator/basement-renovator/blob/main/BasementRenovator.py#L2177
-func generate_doors():
+func _generate_doors():
 	for door in data.doors:
 		if not door.exists:
 			continue
@@ -110,7 +110,22 @@ func generate_doors():
 		$LevelLayer.add_child(sprite)
 		sprite.z_index = 10
 		sprite_background.z_index = -5
+
+func _generate_entities() -> void:
+	for entity_data : EntityRoomData in data.entities:
+		var entity : Entity
+		var entity_pos : Vector2 = $LevelLayer.map_to_local(entity_data.position + Vector2i(2, 2))
+		if [entity_data.type, entity_data.variant] == [1000, 0]:
+			entity = Rock.spawn(entity_pos)
+		elif [entity_data.type, entity_data.variant] == [1500, 0]:
+			entity = Poop.spawn(entity_pos)
+		else:
+			entity = Entity.spawn(entity_pos)
 		
+		entity.id = entity_data.type
+		entity.variant = entity_data.variant
+		entity.subtype = entity_data.subtype
+		$Entities.add_child(entity)
 
 func _get_door_dir(door : DoorRoomData) -> Direction:
 	if !door.exists:
@@ -153,8 +168,9 @@ func _change_stage(new_stage : int) -> void:
 			)
 
 func _ready() -> void:
-	generate_tilemap()
-	generate_doors()
+	_generate_tilemap()
+	_generate_doors()
+	_generate_entities()
 
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("dbg_next_floor"):

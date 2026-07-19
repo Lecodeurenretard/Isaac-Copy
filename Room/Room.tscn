@@ -4,10 +4,11 @@
 [ext_resource type="TileSet" uid="uid://cfg0sblnmiv2a" path="res://Room/room_tileset.tres" id="3_on5nr"]
 [ext_resource type="Texture2D" uid="uid://ufu3ohqbtdah" path="res://Room/door_texture.tres" id="6_soc6w"]
 
-[node name="Node2D" type="Node2D" unique_id=1103732468]
+[node name="Room" type="Node2D" unique_id=1103732468]
 scale = Vector2(2, 2)
 script = ExtResource("2_vdjvi")
 data_file = "res://resources/rooms/01.basement.stb"
+room_index = 6
 
 [node name="LevelLayer" type="TileMapLayer" parent="." unique_id=941747764]
 z_index = -10
@@ -20,3 +21,5 @@ visible = false
 z_index = 10
 position = Vector2(249, 39)
 texture = ExtResource("6_soc6w")
+
+[node name="Entities" type="Node2D" parent="." unique_id=1965168196]

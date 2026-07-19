@@ -65,15 +65,17 @@ func _parse_entities() -> Dictionary[int, Dictionary]:
 		entity.is_boss            = stob(parser.get_named_attribute_value("boss"))
 		entity.has_champion       = stob(parser.get_named_attribute_value("champion"))
 		
+		entity.friction = clamp(entity.friction, 0, 1.15)
 		
 		var boss_id_str := parser.get_named_attribute_value_safe("bossID")
 		entity.boss_id  = -1 if boss_id_str.is_empty() else int(boss_id_str)
 		
+		# Default value found via trial and error
 		var hitbox_str := parser.get_named_attribute_value_safe("collisionRadiusXMulti")
-		entity.hitbox_radius_x_multi = 0.0 if hitbox_str.is_empty() else float(hitbox_str)
+		entity.hitbox_radius_x_multi = 4.0 if hitbox_str.is_empty() else float(hitbox_str)
 		
 		hitbox_str = parser.get_named_attribute_value_safe("collisionRadiusYMulti")
-		entity.hitbox_radius_y_multi = 0.0 if hitbox_str.is_empty() else float(hitbox_str)
+		entity.hitbox_radius_y_multi = 4.0 if hitbox_str.is_empty() else float(hitbox_str)
 		
 		var collision_interval_str := parser.get_named_attribute_value_safe("collisionInterval")
 		entity.collision_interval = 1 if collision_interval_str.is_empty() else int(collision_interval_str)
@@ -93,7 +95,6 @@ func _parse_entities() -> Dictionary[int, Dictionary]:
 				return {}
 		
 		skip_element(parser)
-		
 		res[id][variant][subtype] = entity
 	
 	push_error("Unclosed <entity> tag.")
@@ -224,7 +225,7 @@ func _parse_anm2_content(parser : XMLParser) ->  Dictionary[int, String]:
 
 class _ANM2_Frame:
 	var pos : Vector2	# relative to root, if root is (0, 0)
-	# var pivot_location : Vector2  # there no native way to do this in Godot
+	var pivot_point : Vector2
 	var image_crop : Rect2i
 	var scale : Vector2
 	var duration : float		# in seconds, FpS is assumed to be 30
@@ -299,6 +300,7 @@ func _parse_anm2_animation(parser : XMLParser) -> Dictionary[int, Array]:
 		var id := int(parser.get_named_attribute_value("LayerId"))
 		var frames_data := read_array(parser, "Frame", [
 			"XPosition", "YPosition",
+			"XPivot", "YPivot",
 			"XCrop", "YCrop", "Width", "Height",
 			"XScale", "YScale",
 			"Delay",
@@ -308,11 +310,12 @@ func _parse_anm2_animation(parser : XMLParser) -> Dictionary[int, Array]:
 		var frames : Array[_ANM2_Frame] = []
 		for frame_data in frames_data:
 			var frame_obj = _ANM2_Frame.new()
-			frame_obj.pos        = Vector2(float(frame_data[0]), float(frame_data[1]))
-			frame_obj.image_crop = Rect2i(int(frame_data[2])   , int(frame_data[3])  , int(frame_data[4]), int(frame_data[5]))
-			frame_obj.scale      = Vector2(float(frame_data[6]), float(frame_data[7])) / 100		# scales are in porcents in the XML
-			frame_obj.duration   = float(frame_data[8]) / 30	# we assume 30 frames = 1 second 
-			frame_obj.rotation   = int(frame_data[9])
+			frame_obj.pos         = Vector2(float(frame_data[0]), float(frame_data[1]))
+			frame_obj.pivot_point = Vector2(float(frame_data[2]), float(frame_data[3]))
+			frame_obj.image_crop  = Rect2i(int(frame_data[4])   , int(frame_data[5])  , int(frame_data[6]), int(frame_data[7]))
+			frame_obj.scale       = Vector2(float(frame_data[8]), float(frame_data[9])) / 100		# scales are in porcents in the XML
+			frame_obj.duration    = float(frame_data[10]) / 30	# we assume 30 frames = 1 second 
+			frame_obj.rotation    = int(frame_data[11])
 			frames.append(frame_obj)
 		res.set(id, frames)
 	
@@ -346,16 +349,18 @@ func _anm2_parsed_animation_to_animation(
 		
 		var time := 0.0
 		for frame : _ANM2_Frame in parsed[layer_id]:
-			res.track_insert_key(track_pos			, time, frame.pos)
+			# TODO: implement the 'pivot' in pivot point.
+			var pos := frame.pos - frame.pivot_point + Vector2(frame.image_crop.size) / 2
+			res.track_insert_key(track_pos			, time, pos)
 			res.track_insert_key(track_image_crop	, time, frame.image_crop, 0)
 			res.track_insert_key(track_scale		, time, frame.scale)
 			res.track_insert_key(track_rotation		, time, frame.rotation)
 			time += frame.duration
 		res.length = time
 		
-		# there can be orphan <LayerAnimation> if there's no change
-		if abs(time - expected_duration) > 0.01 and parsed[layer_id].size() != 0:
-			push_warning("Incorrect duration for layer %d of animation '%s': %fs (actual) != %fs (expected)" % [layer_id, animation_name, time, expected_duration])
-			# Warning because LostDeath (001.000_player.anm2, l1175) and other
-			# have several inconstitencies in animation duration.
+		if time > expected_duration:
+			push_error(
+				"Incorrect duration for layer %d of animation '%s': %fs (actual) > %fs (expected)"
+				% [layer_id, animation_name, time, expected_duration]
+			)
 	return res

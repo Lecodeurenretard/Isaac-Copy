@@ -8,6 +8,9 @@ I'm currently working on implementing room layouts. Next will be Isaac and his t
 ### Main goals
 The project is not completed until they are all reached.
 
++ Pickups
+	- Keys (basic & golden)
+	- Coins (pennies, lucky pennies, nickels, dimes)
 + Floor generation
 	- The only special rooms implemented will be the Treasure room, the Shop and Libraries.
 + Seed system (except special ones)
@@ -28,6 +31,7 @@ The general rule is "it has to _feel_ the same as in the base game".
 ### Auxiliary goals
 If I have time, I might implement those.
 
++ Add bombs.
 + Music layering system
 + Some shaders
 + Curses

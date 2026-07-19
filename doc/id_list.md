@@ -1,7 +1,7 @@
 <!--This file was automatically generated, do not change it manually.-->
 
 # Every entity ID by DLC
-Data from [Basement Renovator](https://github.com/Basement-Renovator/basement-renovator/blob/main/resources/) (resources/Entities*.xml)
+Source: Basement Renovator in those files: [resources/Entities*.xml](https://github.com/Basement-Renovator/basement-renovator/blob/main/resources/)
 ## Rebirth
 + 0.10.0: Random Props A
 + 0.20.0: Random Props B

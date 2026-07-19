@@ -40,9 +40,17 @@ func _load_spritesheets(paths : Dictionary[int, String]) -> void:
 static func _static_init() -> void:
 	data = XML._parse_entities()
 
+static func spawn(pos : Vector2) -> Entity:
+	var res := preload("res://Entity/Entity.tscn").instantiate().duplicate()
+	res.position = pos
+	return res
+
 func _ready() -> void:
 	var anim_data = XML.parse_anm2("res://resources/gfx/" + general_data.anm2path)
 	_load_animation_library(anim_data[0])
 	_load_spritesheets(anim_data[2])
 	
 	$AnimationPlayer.play(anim_lib_name + '/' + anim_data[1])
+	
+	$Hitbox.scale.x = 1.0 / general_data.hitbox_radius_x_multi
+	$Hitbox.scale.y = 1.0 / general_data.hitbox_radius_y_multi

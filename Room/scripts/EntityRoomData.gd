@@ -6,6 +6,13 @@ class_name EntityRoomData extends Resource
 @export var subtype : int
 @export var weight : float
 
+var position : Vector2i:
+	get():
+		return Vector2i(x, y)
+	set(val):
+		x = val.x
+		y = val.y
+
 static func from_file(file_handle : FileAccess) -> Array:
 	var x_entities = RoomData.uint_to_sint(file_handle.get_16(), 16)
 	var y_entities = RoomData.uint_to_sint(file_handle.get_16(), 16)
