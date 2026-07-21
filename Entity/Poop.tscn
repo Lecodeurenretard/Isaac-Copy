@@ -3,31 +3,23 @@
 [ext_resource type="Script" uid="uid://vuujsbok8g6r" path="res://Entity/Scripts/Poop.gd" id="1_jdyu8"]
 [ext_resource type="Texture2D" uid="uid://cb1n6ekthpa51" path="res://resources/gfx/grid/grid_poop.png" id="2_p2t0k"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qcjnq"]
-size = Vector2(22, 23)
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_n4mdg"]
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_8nfoa"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xjsdv"]
 atlas = ExtResource("2_p2t0k")
 region = Rect2(0, 0, 32, 32)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_nhkvw"]
+radius = 11.0
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_n4mdg"]
+
 [node name="Poop" type="CharacterBody2D" unique_id=776755999]
-collision_layer = 2
+collision_layer = 24
 collision_mask = 0
 script = ExtResource("1_jdyu8")
 id = 1500
 metadata/_custom_type_script = "uid://vuujsbok8g6r"
-
-[node name="Hitbox" type="CollisionShape2D" parent="." unique_id=874767642]
-position = Vector2(0.49999976, -0.9999995)
-rotation = 1.5707964
-shape = SubResource("RectangleShape2D_qcjnq")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1499417365]
-libraries/ = SubResource("AnimationLibrary_n4mdg")
 
 [node name="Sprites" type="Node2D" parent="." unique_id=851528653]
 
@@ -38,3 +30,9 @@ texture = SubResource("AtlasTexture_8nfoa")
 
 [node name="0" type="Sprite2D" parent="Sprites" unique_id=1403144907]
 texture = SubResource("AtlasTexture_xjsdv")
+
+[node name="Hitbox" type="CollisionShape2D" parent="." unique_id=874767642]
+shape = SubResource("CircleShape2D_nhkvw")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1499417365]
+libraries/ = SubResource("AnimationLibrary_n4mdg")

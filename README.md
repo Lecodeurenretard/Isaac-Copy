@@ -48,7 +48,7 @@ If I have time, I might implement those.
 ## Sources
 There is surprisingly little documentation on some features. If you want to do the same as me, this section can spare you some research.
 
-### Room layout format
+### Room layout files
 In [rooms](resources/rooms/) there is .stb files, those are room layouts. You can avoid parsing them yourself by using [Basement Renovator]() to convert them to XML, just import them and the corresponding XML will be automatically generated next to the original file.  
 If you are willing to spend a little more time, said project provides [a specification](https://github.com/Basement-Renovator/basement-renovator/blob/main/resources/Notes/Room%20Format.txt).
 
@@ -118,6 +118,17 @@ struct SingularEntity {
 }
 ```
 -->
+
+Entities with no animations are not listed in [entities2.xml](resources/entities2.xml).
+Here are the most common:
+- Rocks
+- Pits
+- Blocks
+- Pots
+- Skulls
+- Poops
+- Spikes
+- Floor decorations (listed as Props in [id_list.md](doc/id_list.md))
 
 ### Entity ID list
 I made [a script](doc/generate_ID_list) that generate the list from [Basement Renovator](https://github.com/Basement-Renovator/basement-renovator/blob/main/resources/)'s internal XML files: [doc/id_list.md](doc/id_list.md).

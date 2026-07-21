@@ -73,9 +73,10 @@ shoot_right={
 [layer_names]
 
 2d_physics/layer_1="Walls"
-2d_physics/layer_2="Rocks"
-2d_physics/layer_3="Pits"
-2d_physics/layer_4="Floor"
+2d_physics/layer_2="Pits"
+2d_physics/layer_3="Undestructible"
+2d_physics/layer_4="Bombs"
+2d_physics/layer_5="Tears"
 
 [physics]
 

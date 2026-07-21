@@ -1,5 +1,4 @@
 name: Run-Scripts
-
 on:
   push:
     paths:
@@ -13,9 +12,18 @@ defaults:
     working-directory: ./doc
 
 jobs:
-  build:
+  Run-Scripts:
     runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+    
     steps:
     - uses: actions/checkout@v4
+    
     - name: Update ID list
       run: ./generate_ID_list
+    
+    - uses: stefanzweifel/git-auto-commit-action@v7.2.0
+      with:
+        commit_message: "Updated ID list."
